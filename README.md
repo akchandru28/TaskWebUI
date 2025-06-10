@@ -28,4 +28,34 @@ This is a **React 19** + **TypeScript** frontend application built using **Ant D
 ---
 
 ##  Folder Structure
+src/
+│
+├── components/
+│ ├── TaskForm.tsx # Form to create new task
+│ ├── TaskTable.tsx # Table view with search/delete/run
+│ └── CommandModal.tsx # Modal to show command output
+│
+├── api/
+│ └── TaskService.ts # Axios API functions
+│
+├── types/
+│ └── Task.ts # Type definitions
+│
+└── App.tsx # Main layout and app flow
+
+1. Clone the repo:
+git clone https://github.com/akchandru28/TaskWebUI.git
+cd taskwebui
+
+2.Install dependencies:
+npm install
+
+3.Start the app
+npm run dev
+
+
+The app runs on http://localhost:3030
+
+Make sure the backend server is running at http://localhost:8080.
+
 
