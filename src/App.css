@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+body {
+  background-color: #f0f2f5;
+}
+
+.ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
