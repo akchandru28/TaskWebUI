@@ -17,7 +17,7 @@ const Tasktable: React.FC = () => {
   const [commandOutput, setCommandOutput] = useState('');
   const [selectedTaskName, setSelectedTaskName] = useState('');
 
-  // Fetch all tasks from backend
+  
   const fetchTasks = async () => {
     setLoading(true);
     try {
@@ -34,7 +34,7 @@ const Tasktable: React.FC = () => {
     fetchTasks();
   }, []);
 
-  // Handle search
+ 
   const handleSearch = async () => {
     if (!searchQuery.trim()) {
       fetchTasks();
@@ -48,7 +48,7 @@ const Tasktable: React.FC = () => {
     }
   };
 
-  // Handle task delete
+  
   const handleDelete = async (id: string) => {
     try {
       await deleteTask(id);
@@ -59,7 +59,7 @@ const Tasktable: React.FC = () => {
     }
   };
 
-  // Handle command execution
+  
   const handleRunCommand = async (id: string, name: string) => {
     try {
       const response = await runCommand(id);
@@ -71,10 +71,10 @@ const Tasktable: React.FC = () => {
     }
   };
 
-  // Table columns including new "Owner"
+ 
   const columns = [
     { title: 'Task Name', dataIndex: 'name', key: 'name' },
-    { title: 'Owner', dataIndex: 'owner', key: 'owner' }, // ✅ added owner field
+    { title: 'Owner', dataIndex: 'owner', key: 'owner' }, 
     { title: 'Description', dataIndex: 'description', key: 'description' },
     {
       title: 'Actions',
