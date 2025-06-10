@@ -1,3 +1,4 @@
+
 # Task Manager - Web UI Frontend
 
 This is a **React 19** + **TypeScript** frontend application built using **Ant Design**. It connects to a backend service (Java + MongoDB) and allows users to manage tasks with ease.
@@ -45,3 +46,4 @@ The app runs on http://localhost:3030
 Make sure the backend server is running at http://localhost:8080.
 
 
+![Screenshots](screenshots/)
