@@ -29,7 +29,7 @@ This is a **React 19** + **TypeScript** frontend application built using **Ant D
 
 ## Setup Instructions
 
-1. Clone the repo:
+1.Clone the repo:
 git clone https://github.com/akchandru28/TaskWebUI.git
 cd taskwebui
 
